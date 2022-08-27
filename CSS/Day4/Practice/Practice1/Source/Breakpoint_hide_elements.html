@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (max-width: 600px) {
+            div.hide{
+                background-color: brown;
+                display: none;
+            }
+            
+        }
+
+        @media  screen and (max-width: 600px) {
+            p.breakpoint{
+                background-color: yellow;
+                font-size: 50px;
+            }
+            
+        }
+
+        @media  screen and (min-width: 768px) {
+            p.breakpoint{
+                background-color: red;
+                font-size: 80px;
+            }
+
+        }
+
+        @media only screen and (min-width: 992px) {
+            p.breakpoint {
+                background-color: blue;
+                font-size: 25px;
+            }
+        }
+    </style>
+    <title>Break Point</title>
+</head>
+<body>
+    <h1>Break point</h1>
+    <p class="breakpoint">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus repudiandae tempore delectus nesciunt enim totam doloremque pariatur quis, vel, optio id exercitationem facilis est itaque, tempora molestiae cupiditate illum.</p>
+    
+    <div class="hide">
+        <h1>Hide elements</h1>
+        <p>Heya, I am Rahul Talreja.</p>
+    </div>
+</body>
+</html>

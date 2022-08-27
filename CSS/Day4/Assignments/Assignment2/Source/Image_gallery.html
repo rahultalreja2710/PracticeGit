@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
+        <style>
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                width:100%;
+            }
+            .image{
+                flex: 20%;
+                padding: 5px;
+            }
+            img{
+                width: 100%;
+            }
+            @media only screen and (max-width:500px) {
+                .image{flex: 100%;}   
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Image Gallery with responsive </h1>
+        <div class="container">
+            <div class="image">
+                <img src="./PHOTOS 3/images (1).jpg" alt="image">
+                <img src="./PHOTOS 3/214726.jpg" alt="image">
+                <img src="./PHOTOS 3/images (2).jpg" alt="image">
+            </div>
+            <div class="image">
+                <img src="./PHOTOS 3/115948_oil-painting.jpg" alt="image">
+                <img src="./PHOTOS 3/151034948.jpg" alt="image">
+                <img src="./PHOTOS 3/21575.jpg" alt="image">
+            </div>
+            <div class="image">
+                <img src="./PHOTOS 3/images (1).jpg" alt="image">
+                <img src="./PHOTOS 3/214726.jpg" alt="image">
+                <img src="./PHOTOS 3/images (2).jpg" alt="image">
+                
+            </div>
+           <div class="image">
+            <img src="./PHOTOS 3/115948_oil-painting.jpg" alt="image">
+            <img src="./PHOTOS 3/151034948.jpg" alt="image">
+            <img src="./PHOTOS 3/21575.jpg" alt="image">
+           </div>
+        </div>
+    </body>
+</html>

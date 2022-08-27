@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Media Queries changing the color</title>
+    <style>
+        p.groove {
+            border-style: groove;
+            border-color: blue;
+        }
+
+        @media screen and (max-width: 500px) {
+            p.groove {
+                border-color: red;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Changing color</h1>
+    <p class="groove">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi quidem! Ipsum ratione ea repudiandae, nisi tenetur culpa repellendus quod facere laboriosam voluptatem consectetur fuga maxime. Temporibus accusamus laudantium soluta!</p>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 0.2fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "sidebar main"
+            "sidebar project"
+            "sidebar Educationqualification"
+            "sidebar skills"
+            "sidebar interest"
+            "sidebar footer";
+            grid-gap: 0.5rem;
+            
+        }
+        @media screen and  (max-width:500px) {
+            .container{
+                display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows:auto;
+                grid-template-areas: 
+                "sidebar"
+                "main"
+                "project"
+                "Educationqualification"
+                "skills"
+                "interest"
+                "footer";
+            }
+            img{
+                width: 90px;
+                height: 90px;
+                padding: 45px;
+                align-content: center;
+                border-radius: 50%;
+            }
+            .about{
+                grid-area: main;
+                padding: 50px;
+                background-color: aqua;
+                
+            }
+            .project{
+                grid-area: project;
+                padding: 50px;
+                background-color: aquamarine;
+            }
+            .Educationqualification{
+                padding: 50px;
+                grid-area: Educationqualification ;
+                background-color: cadetblue;
+            }
+            .skills{
+                grid-area: skills;
+                padding: 50px;
+                background-color: cornflowerblue;
+            }
+            .interest{
+                padding: 50px;
+                grid-area: interest;
+                background-color: cyan;
+            }
+            .sidebar {
+                grid-area: sidebar;
+                background-color: darkcyan;
+                position: sticky;
+            }
+            footer{
+                padding: 50px;
+                grid-area: footer;
+                
+            }
+            ul{
+                font-size: large;
+                list-style: none;
+            }
+            .sidebar> ul li{
+                display: inline-block;
+            }            
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            padding: 45px;
+            align-content: center;
+            border-radius: 50%;
+        }
+        .about{
+            grid-area: main;
+            padding: 50px;
+            background-color: aqua;
+            
+        }
+        .project{
+            grid-area: project;
+            padding: 50px;
+            background-color: aquamarine;
+        }
+        .Educationqualification{
+            padding: 50px;
+            grid-area: Educationqualification ;
+            background-color: cadetblue;
+        }
+        .skills{
+            grid-area: skills;
+            padding: 50px;
+            background-color: cornflowerblue;
+        }
+        .interest{
+            padding: 50px;
+            grid-area: interest;
+            background-color: cyan;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: darkcyan;
+            
+        }
+        footer{
+            padding: 50px;
+            grid-area: footer;
+            
+        }
+        ul{
+            text-decoration: dotted;
+            font-size: large;
+            list-style: none;
+            text-decoration-color: aliceblue;
+        }
+        h1{
+            align-self: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rahul Talreja</h1>
+    <div class="container">
+
+        <div class="about" id="about">
+            <h1>ABOUT MYSELF</h1><br>
+            <p>I would like to work in an organization where I can get opportunity to utilize my academic qualification, knowledge, abilities and interpersonal skills at my best level & can fulfil the given task and I can grow professionally in computer world to attain greatest height.</p>
+        </div>
+        <div class="project" id="project">
+            <h1>Project</h1><br>
+            <video src="./video_2022-02-09_16-07-33.mp4" controls width="50%" height="50%">
+                <track label="Deutsch" kind="captions" srclang="de" src="">
+            </video><br>
+            <p>I have made the projec dotnet according to requirements of my university.</p>
+        </div>
+        <div class="Educationqualification" id="Educationqualification">
+            <h1>Education Qualification</h1>
+            <table>
+                <caption></caption>
+                <!--Education Qulaification-->
+                <th>
+                    <td style="width: 300px;">Course</td>
+                    <td style="width: 300px;">College and School</td>
+                    <td style="width: 300px;">Year of passing</td>
+                </th>
+                <tr>
+                    <td>BE</td>
+                    <td>Darshan College</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Utkarsh School</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Utkarsh School</td>
+                    <td>2016</td>
+                </tr>
+            </table>
+        </div>
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li>C programs logic</li>
+                <li>Javascript</li>
+                <li>Html</li>
+                <li>GIT</li>
+            </ul>
+        </div>
+        <div class="interest" id="interest">
+            <h1>Interest</h1>
+            <ul>
+                <li>Palying cricket</li>
+                <li>Coding</li>
+                <li>Travelling</li>
+                <li>adventurous Activity</li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <img src="./180540107167_Talreja_Rahul.jpg" alt="avtar">
+            <ul>
+                <li><a href="#about">About</a></li><br><br>
+                <li><a href="#project">Project</a></li><br><br>
+                <li><a href="#Educationqualification">Education Qualification</a></li><br><br>
+                <li><a href="#skills">Skills</a></li><br><br>
+                <li><a href="#interest">Interest</a></li>
+            </ul>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
